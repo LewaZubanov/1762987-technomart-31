@@ -136,10 +136,6 @@ a {
 
 /* header logo */
 
-/* .main-header-logo img {
-  margin-top: 12px;
-} */
-
 .main-header-logo {
   display: block;
   width: 108px;
@@ -193,6 +189,7 @@ display: none;}
 
 .bookmarks-link,
 .basket-link,
+.basket-link-add,
 .checkout-link {
   display: block;
 }
@@ -220,11 +217,23 @@ display: none;}
   padding: 10px 26px 8px 49px;
 }
 
+.basket-link-add {
+  width: 80px;
+  height: 24px;
+  background: url("/img/icons/icon-basket.svg") no-repeat 26px 13px var(--basic-red);
+  padding: 10px 23px 8px 47px;
+}
+
 .basket-link:hover {
   background: url("/img/icons/icon-basket.svg") no-repeat 26px -44px;
 }
 
-.basket-link:active {
+.basket-link-add:hover {
+  background: url("/img/icons/icon-basket.svg") no-repeat 26px -44px var(--basic-greyblue);
+}
+
+.basket-link:active,
+.basket-link-add:active {
   background: url("/img/icons/icon-basket.svg") no-repeat 26px 13px #161D29;
   color: rgba(255, 255, 255, 0.5);
 }
@@ -310,6 +319,34 @@ display: none;}
   padding: 12px 27px 12px 45px;
 }
 
+.user-link {
+  color: var(--basic-black);
+  background: url("/img/icons/icon-user.svg") no-repeat 19px 14px var(--basic-white);
+  padding: 12px 3px 12px 56px;
+}
+
+.user-exit {
+  width: 186px;
+  height: 21px;
+  color: var(--basic-black);
+  background: url("/img/icons/icon-logout.svg") no-repeat 19px 14px var(--basic-white);
+  padding: 12px 3px 12px 56px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .login-link:hover {
   color: var(--basic-red);
   background: url("/img/icons/icon-login.svg") no-repeat 19px -48px var(--basic-white);
@@ -317,7 +354,7 @@ display: none;}
 
 .login-link:active {
   color: var(--basic-greylight);
-  background: url("/img/icons/icon-login.svg") no-repeat 19px 14px var(--basic-white);
+  background: url("/img/icons/icon-login.svg") no-repeat 17px 14px var(--basic-white);
 }
 
 .registration-link {
