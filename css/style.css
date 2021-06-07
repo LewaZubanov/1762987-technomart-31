@@ -530,10 +530,6 @@ input[type=range]::-moz-range-thumb {
 }
 
 
-.checkbox {
-  background: url(../img/icons/checkbox-off.svg) no-repeat;
-}
-
 .filter-fieldset ul {
   line-height: 39px;
   padding-bottom: 18px;
@@ -544,6 +540,7 @@ input[type=range]::-moz-range-thumb {
 }
 
 input[type=checkbox] {
+  border: 0;
   margin-bottom: -6px;
   width: 27px;
   height: 23px;
